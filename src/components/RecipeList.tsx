@@ -37,10 +37,13 @@ export function RecipeList() {
     }
   }
 
-  const filteredRecipes = recipes.filter(recipe =>
-    recipe.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-    recipe.description.toLowerCase().includes(searchQuery.toLowerCase())
-  );
+  const filteredRecipes = recipes
+    .filter(recipe =>
+      recipe.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      recipe.description.toLowerCase().includes(searchQuery.toLowerCase())
+    )
+    .slice()
+    .sort((a, b) => a.title.localeCompare(b.title));
 
   if (loading) {
     return (
