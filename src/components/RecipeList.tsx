@@ -42,7 +42,6 @@ export function RecipeList() {
       recipe.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
       recipe.description.toLowerCase().includes(searchQuery.toLowerCase())
     )
-    .slice()
     .sort((a, b) => a.title.localeCompare(b.title));
 
   if (loading) {
