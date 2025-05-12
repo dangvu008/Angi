@@ -4,10 +4,10 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "npx vite",
-    "build": "npx vite build",
+    "dev": "vite",
+    "build": "vite build",
     "lint": "eslint .",
-    "preview": "npx vite preview"
+    "preview": "vite preview"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.39.7",
@@ -33,6 +33,6 @@
     "vite": "^5.1.4"
   },
   "engines": {
-    "node": ">=20.0.0"
+    "node": ">=18.0.0"
   }
 }
