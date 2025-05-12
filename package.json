@@ -5,9 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "npx vite",
-    "build": "vite build",
+    "build": "npx vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "npx vite preview"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.39.7",
