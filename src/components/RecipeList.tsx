@@ -37,7 +37,7 @@ export function RecipeList() {
     }
   }
 
-  const filteredRecipes = recipes
+  const filteredRecipes = [...recipes]
     .filter(recipe =>
       recipe.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
       recipe.description.toLowerCase().includes(searchQuery.toLowerCase())
